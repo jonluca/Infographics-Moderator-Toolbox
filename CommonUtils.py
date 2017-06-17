@@ -32,10 +32,10 @@ def get_settings(filename):
     return settings
 
 
-def get_reddit_instance():
+def get_reddit_instance(agent):
     settings = get_settings("settings.txt")
     return praw.Reddit(client_id=settings[0],
                        client_secret=settings[1],
                        username=settings[2],
-                       user_agent=settings[3],
-                       password=settings[4])
+                       user_agent=agent,
+                       password=settings[3])

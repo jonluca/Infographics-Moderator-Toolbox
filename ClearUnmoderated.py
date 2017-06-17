@@ -2,7 +2,7 @@ import time
 
 from CommonUtils import get_reddit_instance, hours_since
 
-reddit = get_reddit_instance()
+reddit = get_reddit_instance("/r/dankmemes UnmoderatedClearer v3.0 by /u/AdamZF")
 sub = reddit.subreddit('dankmemes')
 
 while True:

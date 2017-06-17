@@ -45,7 +45,7 @@ c.execute('''CREATE TABLE IF NOT EXISTS comments (comment_id, parent_post, repor
 conn.commit()
 conn.close()
 
-reddit = get_reddit_instance()
+reddit = get_reddit_instance("/r/dankmemes NewSubmissionCommentSticky v3.0 by /u/AdamZF")
 
 sub = reddit.subreddit('dankmemes')
 
