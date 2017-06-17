@@ -7,10 +7,10 @@ reddit = get_reddit_instance("/r/dankmemes ClearControversial v3.0 by /u/AdamZF"
 sub = reddit.subreddit('dankmemes')
 
 while True:
-    for submission in sub.controversial('day', limit=None):
-        if submission.score < 10:
-            hours = hours_since(submission.created_utc)
-            if hours > 1:
-                submission.mod.remove()
-                time.sleep(3)
-    time.sleep(3)
+	for submission in sub.controversial('day', limit=None):
+		if submission.score < 10:
+			hours = hours_since(submission.created_utc)
+			if hours > 1:
+				submission.mod.remove()
+				time.sleep(3)
+	time.sleep(3)
