@@ -24,4 +24,8 @@ Moderator Username
 Moderator Password
 ```
 
+The App-ID and App-Secret should be created by the moderator that you are using the username/password of on lines 3 and 4. 
+
+You can get an Id and Secret by clicking "Create an app" on this [page](https://www.reddit.com/prefs/apps/).
+
 You should then be able to run any of the scripts with `python script.py`.
