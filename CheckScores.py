@@ -24,7 +24,7 @@ def report_post(comment, reddit):
     posts_db = c.execute('''SELECT * FROM comments WHERE comment_id=?''', [comment_id]).fetchone()
     current = posts_db[1]
     post = reddit.submission(current)
-    # msg_sub = reddit.subreddit('dankmemes')
+    # msg_sub = reddit.subreddit('infographics')
     # post_link = post.shortlink
     # message_send = 'Mods, Please check this post, it reached the downvote threshold.  [Link](%s)' % post_link
     # msg_sub.message('Check Post', message_send)

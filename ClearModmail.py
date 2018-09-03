@@ -1,8 +1,8 @@
 import time
 from CommonUtils import get_reddit_instance
 
-reddit = get_reddit_instance("/r/dankmemes ModmailClearer v1.0 by /u/larperdoodle")
-subreddit = reddit.subreddit('/r/dankmemes')
+reddit = get_reddit_instance("/r/infographics ModmailClearer v1.0 by /u/larperdoodle")
+subreddit = reddit.subreddit('/r/infographics')
 while True:
 	for conversation in subreddit.conversations(state='new'):
 		if len(conversation.messages) == 1:
