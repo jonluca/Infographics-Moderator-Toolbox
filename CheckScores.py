@@ -44,6 +44,7 @@ conn.close()
 reddit = get_reddit_instance("/r/infographics CheckCommentScores by /u/JonLuca")
 
 user = reddit.redditor('Infographics_Mod')
+print("Starting check score script")
 while True:
     for comment in user.comments.new(limit=400):
         comment_id = comment.id
