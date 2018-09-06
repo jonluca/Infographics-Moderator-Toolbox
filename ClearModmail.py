@@ -1,3 +1,4 @@
+from threading import Thread
 import time
 from CommonUtils import get_reddit_instance
 
@@ -8,6 +9,6 @@ while True:
 		if len(conversation.messages) == 1:
 			for message in conversation.messages:
 				if message.startswith("Thank you for submitting to"):
-					conversation.archive()
-					time.sleep(2)
+							Thread(target=conversation.archive).start()
+
 	time.sleep(3)

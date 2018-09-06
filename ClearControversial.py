@@ -1,6 +1,7 @@
 import time
 from CommonUtils import hours_since
 from CommonUtils import get_reddit_instance
+from threading import Thread
 
 reddit = get_reddit_instance("/r/dankmemes ClearControversial v3.0 by /u/AdamZF")
 
@@ -12,5 +13,6 @@ while True:
 			hours = hours_since(submission.created_utc)
 			if hours > 1:
 				submission.mod.remove()
-				time.sleep(3)
-	time.sleep(3)
+				Thread(target=submission.mod.remove).start()
+	time.sleep(30)
+
