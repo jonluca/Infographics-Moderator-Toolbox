@@ -58,8 +58,8 @@ while True:
                 continue
             else:
                 conn.close()
-                if comment.score < -6:
+                if comment.score < -3:
                     report_post(comment, reddit)
-                elif comment.score < -20:
+                elif comment.score < -5:
                     remove_post(comment, reddit)
         time.sleep(30)
