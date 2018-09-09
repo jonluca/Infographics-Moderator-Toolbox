@@ -52,4 +52,4 @@ print("Starting Script")
 while True:
     for submission in sub.new(limit=100):
         process_submission(submission)
-        time.sleep(30)
+    time.sleep(30)
